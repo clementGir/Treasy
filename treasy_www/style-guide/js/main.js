@@ -1,0 +1,1 @@
+$(document).ready(function(){$("a").click(function(){return $("html, body").animate({scrollTop:$($(this).attr("href")).offset().top},400),!1}),$(function(){$("img").imgx()})});

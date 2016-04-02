@@ -1,0 +1,867 @@
+.translate {
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%); 
+    
+    -webkit-transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+    -moz-transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+    -ms-transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+    -o-transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+    transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+}
+.translateBack {
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); 
+
+    -webkit-transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+    -moz-transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+    -ms-transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+    -o-transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+    transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+}
+.content *, .content *:hover, .content *:focus, .content *:active {
+    cursor: url(../_img/cursor.png)15 15, auto !important;
+}
+
+body {
+  width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,.2);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.content {
+      position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    top: 50%;
+    border-radius: 5px;
+    max-width: 414px;
+    max-height: 736px;
+}
+
+section {
+    margin: 0;
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    float: left;
+    left: 0;
+    -moz-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); 
+
+    webkit-transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+    -moz-transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+    -ms-transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+    -o-transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+    transition: all .5s cubic-bezier(.79,.06,.31,.99) 0s;
+}
+#section__loading_screen_logo {
+  background: linear-gradient(135deg, #386ec3 0%, #3cbdc5 100%); }
+  #section__loading_screen_logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.detailPlane, .detailBike, .detailPets {
+  display: none;
+}
+#qrcode img {
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    top: 50%;
+    max-width: 256px;
+    width: 96%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#section__first_log_in {
+  background: linear-gradient(135deg, #386ec3 0%, #3cbdc5 100%);
+  position: relative; }
+  #section__first_log_in .header_logo {
+    top: 50px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+  #section__first_log_in .information {
+    width: 83.75%;
+    margin: 0 auto;
+    margin-top: 150px; }
+    #section__first_log_in .information h1 {
+      margin: 0;
+      color: #fff;
+      font-family: "proxima-nova", sans-serif;
+      text-align: center; }
+    #section__first_log_in .information aside p {
+      color: #fff;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 100;
+      font-size: 12px;
+      opacity: 0.6;
+      text-align: center; }
+  #section__first_log_in form {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    margin-top: 50px;
+    -moz-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+    #section__first_log_in form input[type="date"] {
+      position: relative;
+      height: 50px;
+      outline: none;
+      padding: 0;
+      border: none;
+      display: inline-block;
+      border-radius: 4px;
+      padding-left: 35px;
+      color: #355F95;
+      font-size: 22px;
+      letter-spacing: 1px;
+      width: 83.75%;
+      background: white;
+      -webkit-appearance: none;
+      line-height: 50px;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #355F95;
+      letter-spacing: 1px; }
+    #section__first_log_in form input[type="submit"] {
+      width: 100%;
+      height: 50px;
+      margin-top: 15px;
+      border-radius: 5px;
+      background: url(../_img/right_arrow.svg) 90% no-repeat;
+      background-size: 15px;
+      background-color: #44DB5E;
+      border: none;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #fff;
+      letter-spacing: 1px; }
+    #section__first_log_in form div {
+      height: 50px;
+      position: absolute;
+      width: 50px;
+      top: 0;
+      right: 0;
+      background: url(../_img/calendar_icon.svg) center no-repeat;
+      background-size: 20px;
+      background-color: #386EC3;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px; }
+  #section__first_log_in ul {
+    width: 83.75%;
+    left: 50%;
+    -moz-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    padding: 0;
+    position: absolute;
+    bottom: 10px; }
+    #section__first_log_in ul li {
+      float: left;
+      list-style: none;
+      margin-left: 10%;
+      margin-right: 6%;
+      font-family: "proxima-nova", sans-serif; }
+      #section__first_log_in ul li a {
+        color: #fff;
+        opacity: 0.5;
+        text-decoration: none; }
+      #section__first_log_in ul li .active {
+        opacity: 1;
+        text-decoration: underline; }
+
+#section__recent_travel {
+    background-color: white;
+}
+  #section__recent_travel .header {
+    width: 100%;
+    height: 50px;
+    background: #386EC3;
+    position: relative;
+    box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.75); }
+    #section__recent_travel .header h1 {
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      font-family: "proxima-nova", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 20px;
+      color: #fff; }
+    #section__recent_travel .header .calendar {
+      position: absolute;
+      top: 50%;
+      -moz-transform: translate(0%, -50%);
+      -o-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+      -webkit-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+      left: 20px;
+      height: 25px;
+      width: 25px;
+      background: url(../_img/settings_icon.svg) center no-repeat;
+      background-size: 20px;
+      border: none; }
+  #section__recent_travel ul {
+    padding: 0;
+    margin: 0; }
+    #section__recent_travel ul li {
+      list-style: none;
+      width: 100%;
+      height: 100px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: rgba(56, 110, 195, 0.8);
+      font-family: "proxima-nova", sans-serif;
+      color: #fff; }
+      .list-block .item-content {
+        padding: 0;
+      }
+      
+      #section__recent_travel ul li .departure_city {
+        float: left;
+        padding-left: 15px;
+        line-height: 100px; }
+      #section__recent_travel ul li .destination_city {
+        float: left;
+        text-align: left;
+        padding-right: 15px;
+        line-height: 100px; }
+    #section__recent_travel ul .empty {
+      opacity: 0.2; }
+    #section__recent_travel ul li:first-child {
+      margin-top: 0; }
+  #section__recent_travel .add_travel {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -moz-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    width: 83.75%;
+    height: 50px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: url(../_img/cross_plus_icon.svg) 90% no-repeat;
+    background-size: 15px;
+    background-color: #44DB5E;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1px; }
+
+#section__configure_your_ticket {
+  background: linear-gradient(135deg, #386ec3 0%, #3cbdc5 100%); }
+  #section__configure_your_ticket .header {
+    width: 100%;
+    height: 50px;
+    background: #386EC3;
+    position: relative;
+    box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.75); }
+    #section__configure_your_ticket .header h1 {
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      font-family: "proxima-nova", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 20px;
+      color: #fff; }
+    #section__configure_your_ticket .header .left_arrow {
+      position: absolute;
+      top: 50%;
+      -moz-transform: translate(0%, -50%);
+      -o-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+      -webkit-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+      left: 20px;
+      height: 25px;
+      width: 25px;
+      background: url(../_img/left_arrow.svg) center no-repeat;
+      background-size: 20px;
+      border: none; }
+  #section__configure_your_ticket form {
+    width: 83.75%;
+    margin: 0 auto;
+    margin-top: 20px; }
+    #section__configure_your_ticket form .from_to {
+      width: 100%; }
+      #section__configure_your_ticket form .from_to label {
+        display: inline-block;
+        font-family: "proxima-nova", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        opacity: 0.7;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      #section__configure_your_ticket form .from_to input {
+        width: 100%;
+        position: relative;
+        height: 50px;
+        right: 0;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding-left: 20px;
+        font-family: "proxima-nova", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #355F95;
+        letter-spacing: 1px; }
+    #section__configure_your_ticket form .round_trip_date {
+      float: left;
+      position: relative;
+      width: 70%; }
+      #section__configure_your_ticket form .round_trip_date label[for="calendar_date"] {
+        display: block;
+        font-family: "proxima-nova", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        opacity: 0.7;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      #section__configure_your_ticket form .round_trip_date input[type="date"] {
+        width: 90%;
+        display: block;
+        position: relative;
+        height: 50px;
+        right: 0;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding-left: 20px;
+        font-family: "proxima-nova", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #355F95;
+        letter-spacing: 1px;
+        -webkit-appearance: none;
+        line-height: 45px; }
+      #section__configure_your_ticket form .round_trip_date div {
+        height: 51px;
+        position: absolute;
+        width: 50px;
+        top: 37px;
+        right: 20px;
+        background: url(../_img/calendar_icon.svg) center no-repeat;
+        background-size: 20px;
+        background-color: #386EC3;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px; }
+
+
+    #section__configure_your_ticket form .round_trip_check button {
+      background-color: #355F95;
+      opacity: 1;
+      margin-top: 37px;
+      height: 50px;
+      border-radius: 5px;
+      border: none;
+      border: 1px solid #fff;
+      color: #fff;
+      font-family: "proxima-nova", sans-serif;
+      float: right; }
+    #section__configure_your_ticket form p {
+      font-family: "proxima-nova", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+      opacity: 0.7;
+      margin-top: 100px;
+      margin-bottom: 10px; }
+    #section__configure_your_ticket form input[type="submit"] {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -moz-transform: translate(-50%, 0%);
+      -o-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+      -webkit-transform: translate(-50%, 0%);
+      transform: translate(-50%, 0%);
+      width: 83.75%;
+      height: 50px;
+      border: none;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background: url(../_img/right_arrow.svg) 90% no-repeat;
+      background-size: 15px;
+      background-color: #44DB5E;
+      color: #fff;
+      letter-spacing: 1px; }
+    #section__configure_your_ticket form #airport {
+      background: url(../_img/plane_icon.svg) 10% no-repeat;
+      background-size: 15px;
+      width: 45%; }
+    #section__configure_your_ticket form #airport, #section__configure_your_ticket form #first_class {
+      outline: none;
+      border-radius: 5px;
+      border: none;
+      height: 50px;
+      background-color: #fff;
+      opacity: .7;
+      font-size: 16px;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      color: #355F95;
+      float: left; 
+      display: block;}
+    #section__configure_your_ticket form #first_class {
+      width: 45%;
+      float: right; }
+    #section__configure_your_ticket form #animal {
+      background: url(../_img/pets_icon.svg) 10% no-repeat;
+      background-size: 15px; }
+    #section__configure_your_ticket form #bike {
+      background: url(../_img/bike_icon.svg) 10% no-repeat;
+      background-size: 20px;
+      float: right; }
+    #section__configure_your_ticket form select {
+      outline: none;
+      margin-top: 25px;
+      border-radius: 5px;
+      border: none;
+      height: 50px;
+      background-color: #fff !important;
+      font-size: 16px;
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #355F95;
+      width: 45%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      padding-left: 35px; }
+
+#airport p, #first_class p {
+    color: #355F95 !important;
+    text-align: left;
+    line-height: 50px;
+    padding-left: 35px;
+    margin: 0 !important;
+}
+#first_class p {
+  padding-left: 0;
+  text-align: center;
+  margin-top: -4px !important;
+}
+.check_selected_after p {
+    opacity: 1 !important;
+}
+
+#section__qrcode_generated {
+  background: linear-gradient(135deg, #386ec3 0%, #3cbdc5 100%); 
+}
+  #section__qrcode_generated .header {
+    width: 100%;
+    height: 50px;
+    background: #386EC3;
+    position: relative;
+    box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.75); }
+    #section__qrcode_generated .header h1 {
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      width: 150px;
+      margin: 0 auto;
+      font-family: "proxima-nova", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 20px;
+      color: #fff; }
+    #section__qrcode_generated .header .left_arrow {
+      position: absolute;
+      top: 50%;
+      -moz-transform: translate(0%, -50%);
+      -o-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+      -webkit-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+      left: 20px;
+      height: 25px;
+      width: 25px;
+      background: url(../_img/left_arrow.svg) center no-repeat;
+      background-size: 20px;
+      border: none; }
+  #section__qrcode_generated h1 {
+    margin: 0 auto;
+    width: 83.75%;
+    margin-top: 20px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: #fff; }
+  #section__qrcode_generated img {
+}
+#section__qrcode_download {
+    background: #fff;
+    overflow: auto;
+}
+  #section__qrcode_download .header {
+    width: 100%;
+    height: 50px;
+    background: #386EC3;
+    position: relative;
+    box-shadow: 0px 4px 5px -3px rgba(0, 0, 0, 0.75); }
+    #section__qrcode_download .header h1 {
+      margin: 0;
+      line-height: 50px;
+      text-align: center;
+      width: 150px;
+      margin: 0 auto;
+      font-family: "proxima-nova", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 20px;
+      color: #fff; }
+    #section__qrcode_download .header .left_arrow {
+      position: absolute;
+      top: 50%;
+      -moz-transform: translate(0%, -50%);
+      -o-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+      -webkit-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+      left: 20px;
+      height: 25px;
+      width: 25px;
+      background: url(../_img/left_arrow.svg) center no-repeat;
+      background-size: 20px;
+      border: none; }
+    #section__qrcode_download .header .download_icon {
+      position: absolute;
+      top: 50%;
+      -moz-transform: translate(0%, -50%);
+      -o-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+      -webkit-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+      right: 20px;
+      height: 25px;
+      width: 25px;
+      background: url(../_img/download_icon.svg) center no-repeat;
+      background-size: 20px;
+      border: none; }
+  #section__qrcode_download ul {
+    padding-left: 0;
+    width: 83.75%;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    height: 28px;
+    color: #386EC3; }
+    #section__qrcode_download ul li {
+      font-family: "proxima-nova", sans-serif;
+      font-size: 16px;
+      list-style: none;
+      float: left; }
+    #section__qrcode_download ul li:nth-child(2) {
+      background: url(../_img/return_icon.svg) center no-repeat;
+    background-size: 35px;
+    width: 25px;
+    height: 35px;
+    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 9px;
+    background-size: 100%; }
+    #section__qrcode_download ul li:last-child {
+      float: right; }
+  #section__qrcode_download .travel-details {
+    padding-right: 20px;
+    height: 30px;
+    opacity: 0.5;
+    margin: 0 auto; }
+    #section__qrcode_download .travel-details p {
+      font-family: "proxima-nova", sans-serif;
+      font-size: 16px;
+      float: left;
+      color: #386EC3;
+      margin-top: 12px;
+      margin-left: 20px; }
+    #section__qrcode_download .travel-details img {
+    position: relative;
+    float: right;
+    top: 10px;
+    height: 20px;
+    margin-left: 8px; }
+  #section__qrcode_download .qrcode_icon {
+    width: 83.75%;
+    position: relative;
+    left: 50%;
+    top: 30px;
+    -moz-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+  #section__qrcode_download .scannez {
+        font-family: "proxima-nova", sans-serif;
+    font-size: 16px;
+    width: 83.75%;
+    color: #386EC3;
+    margin: 0 auto;
+    text-align: left;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 25px;
+}
+
+    #section__first_log_in ul li .active {
+    opacity: 1;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+}
+#section__first_log_in ul li a:after {
+    content: "";
+    height: 1px;
+    background-color: white;
+    width: 23px;
+    bottom: 0px;
+    opacity: 0;
+    left: 0;
+    position: absolute;
+    
+}
+#section__first_log_in ul li a.active:after {
+    bottom: -4px;
+    opacity: 1;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+}
+
+.button_before{
+  background-color: #BFBFBF !important;
+}
+
+.check_selected_after{
+  opacity: 1 !important;
+  outline: none !important;
+}
+/*# sourceMappingURL=style.css.map */
+.pac-container.pac-logo.hdpi:after {
+    display: none !important;
+}
+.pac-container {
+    border-radius: 4px;
+}
+.pac-item {
+    line-height: 45px;
+    border-top: 1px solid rgba(53,95,149,0.3);
+    color: #355F95;
+    font-size: 13px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+.pac-item-query {
+    font-size: 19px;
+    padding-right: 10px;
+    color: #355F95;
+    font-weight: 400;
+}
+.hdpi .pac-icon {
+    display: none;
+}
+.pac-matched {
+    font-weight: 400;
+}
+#loader {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px -150px;
+    height: 100px;
+}
+#loader img {
+  width: 100%;
+}
+#loader svg {
+  margin-top: -10px;
+  display: block;
+}
+#loader line {
+  stroke-dasharray:55px;
+  -webkit-animation: monanimation .5s infinite cubic-bezier(.82,.11,.27,1.02);
+  -moz-animation: monanimation .5s infinite cubic-bezier(.82,.11,.27,1.02);
+  stroke: #fff;
+  stroke-width: 10px;
+}
+
+@-moz-keyframes monanimation {
+    0% {-moz-stroke-dashoffset:0;}
+  100% {stroke-dashoffset:110px;}
+}
+
+@-webkit-keyframes monanimation {
+  0% {stroke-dashoffset:0;}
+  100% {stroke-dashoffset:110px;}
+}
+#qrcode {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    pointer-events: none;
+}
+.list-block .swipeout-actions-left a, .list-block .swipeout-actions-right a {
+  background: url("../_img/edit.svg") center no-repeat, #44DB5E;
+  width: 60px;
+  background-size: 20px;
+}
+.list-block .swipeout-actions-left a.swipeout-delete, .list-block .swipeout-actions-right a.swipeout-delete {
+  background: url("../_img/recycle_bin.svg") center no-repeat, #d80a0a;
+  width: 60px;
+  background-size: 20px;
+}
+@media (max-width: 414px), (max-height: 736px) {
+  .content {
+    border-radius: 0;
+  }
+}
+
+.list-block .swipeout-content {
+    display: block;
+    height: 100%;
+}
+.swipeout-content p {
+  margin: 0;
+  float: left;
+  line-height: 100px;
+  padding: 0;
+}
+
+.swipeout-content p:first-child {
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.departure_city, .destination_city {
+  font-size: 19px;
+}
+
+#section__recent_travel ul li .departure_city {
+  padding: 0;
+}
+
+.swipeout-content p.listA {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.listA, .listDe {
+  opacity: .8;
+}
+
+.move {
+    float: right;
+    height: 50px;
+    margin-top: 25px;
+    margin-right: 15px;
+}
+
+.move span {
+    background-color: #fff;
+    width: 1px;
+    float: right;
+    display: block;
+    height: 20px;
+    margin-right: 4px;
+    margin-top: 15px;
+}
+
+.list-block {
+    margin: 10px 0;
+    font-size: 17px;
+}
+.list-block ul:before {
+  display: none;
+}
+
+#section__qrcode_download ul {
+    padding-left: 0;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 20px;
+    color: #386EC3;
+    background-color: rgba(56, 110, 195, 0.1);
+    border-bottom: 1px solid #c8c7cc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#section__qrcode_download ul li {
+  line-height: 20px;
+}
+.fromRecap {
+  padding-left: 20px;
+}
+.toRecap {
+  padding-right: 20px;
+}
+
+
+
+
+
+.modal-buttons, .modal-text {
+  font-family: "proxima-nova", sans-serif;
+}
